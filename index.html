@@ -1,7 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-   <title> <h1 style="font-size:60px;">超科幻级画廊</h1></title>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: yellow;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>超科幻多元宇宙画集/スーパーSFマルチバース油絵コレクション/Super sci-fi multiverse oil painting collection</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">母亲和狗/母と犬/Mother and dog</a></li>
+      <li><a href="#">龙的传说/Legend of the dragon/ドラゴンの伝説</a></li>
+      <li><a href="#">Trump's election/トランプの選挙/特朗普竞选总统</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1><font color="deeppink">Stories about painting!/絵についての物語！/关于绘画的故事！</font></h1>
+    <p>联系邮箱/連絡先メールアドレス/contact email: ruiojack520@gmail.com.</p>
+    <p>早期作品，请尽情欣赏后购买收藏，增值中！/購入と購入を楽しんで、価値を加えてください！/Please enjoy the oil painting and purchase it, as the value is increasing!</p>
+  </article>
+</section>
+
+
+
+</body>
+  <head>
     <style>
             img
             {
@@ -36,13 +129,7 @@
 </head>
 <body>
     <table>
-        <tr>
-          <th><h1 style="font-size:40px;"><font color="yellow">超科幻多元宇宙画集/スーパーSFマルチバース油絵コレクション/Super sci-fi multiverse oil painting collection</font></h1><font color="white">-联系邮箱-連絡先メールアドレスcontact email: ruiojack520@gmail.com</font></th>
-            <!-- lt's great! Add oil! -->
-        </tr>
-        <tr>
-                <center><td><h2 style="font-size:30px;"><font color="deeppink">早期作品，请尽情欣赏后购买收藏，增值中！/購入と購入を楽しんで、価値を加えてください！/Please enjoy the oil painting and purchase it, as the value is increasing!</font></h2></td></center>
-        </tr>
+      
         <tr>
                 <td><img src="mother.jpg"/600x600" width="700" hight="350" border="6" alt="" ></td>
                 <td><img src="龙.jpg"/600x600" width="700" hight="350" border="6" alt="" ></td>
@@ -61,5 +148,8 @@
                          <td><img src="同行.jpg"/600x600" width="700" hight="350" border="6" alt="" ></td>
             </tr>
     </table>
+    <footer>
+  <p>Oil painting website for easy buying>簡単に買える油絵サイト: www.cheapeasylife.ga</p>
+</footer>
 </body>
 </html>
